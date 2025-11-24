@@ -1,0 +1,8 @@
+CREATE TABLE logs (
+  id SERIAL PRIMARY KEY,
+  organisation_id INT,
+  user_id INT,
+  action VARCHAR(255),
+  meta JSONB,
+  timestamp TIMESTAMP DEFAULT now()
+);

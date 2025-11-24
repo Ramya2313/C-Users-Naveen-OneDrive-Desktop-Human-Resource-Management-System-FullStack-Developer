@@ -1,0 +1,7 @@
+CREATE TABLE teams (
+  id SERIAL PRIMARY KEY,
+  organisation_id INT REFERENCES organisations(id),
+  name VARCHAR(255) NOT NULL,
+  description TEXT,
+  created_at TIMESTAMP DEFAULT now()
+);

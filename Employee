@@ -1,0 +1,9 @@
+CREATE TABLE employees (
+  id SERIAL PRIMARY KEY,
+  organisation_id INT REFERENCES organisations(id),
+  first_name VARCHAR(100),
+  last_name VARCHAR(100),
+  email VARCHAR(255),
+  phone VARCHAR(50),
+  created_at TIMESTAMP DEFAULT now()
+);

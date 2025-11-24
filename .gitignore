@@ -1,0 +1,25 @@
+# Node/Frontend
+node_modules/
+dist/
+build/
+npm-debug.log
+package-lock.json
+
+# Java / Spring Boot
+target/
+*.class
+*.jar
+*.war
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# OneDrive/OS
+.DS_Store
+Thumbs.db
+
+# Environment and logs
+.env
+*.log
